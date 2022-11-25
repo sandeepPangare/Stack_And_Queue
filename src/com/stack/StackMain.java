@@ -8,7 +8,7 @@ public class StackMain {
         int choice=0;
         Scanner sc = new Scanner(System.in);
         Stack s = new Stack();
-        System.out.println("*********Stack operations using array*********");
+        System.out.println("*********Stack operations using array********");
         System.out.println("------------------------------------------------");
         while(choice != 3)
         {
