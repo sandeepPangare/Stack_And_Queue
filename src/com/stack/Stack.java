@@ -2,8 +2,8 @@ package com.stack;
 
 import java.util.Scanner;
 
-public class Stack {
-
+class Stack
+{
     int top;
     int maxsize = 10;
     int[] arr = new int[maxsize];
@@ -31,6 +31,20 @@ public class Stack {
             top++;
             arr[top]=val;
             System.out.println("Item pushed");
+            return true;
+        }
+    }
+    boolean pop ()
+    {
+        if (top == -1)
+        {
+            System.out.println("Underflow !!");
+            return false;
+        }
+        else
+        {
+            top --;
+            System.out.println("Item popped");
             return true;
         }
     }

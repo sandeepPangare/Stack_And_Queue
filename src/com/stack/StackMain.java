@@ -8,13 +8,13 @@ public class StackMain {
         int choice=0;
         Scanner sc = new Scanner(System.in);
         Stack s = new Stack();
-        System.out.println("*********Stack operations using array********");
+        System.out.println("*********Stack operations using array*********");
         System.out.println("------------------------------------------------");
-        while(choice != 3)
+        while(choice != 4)
         {
             System.out.println("Chose one from the below options...");
-            System.out.println("\n1.Push\n2.Show\n3.Exit");
-            System.out.println(" Enter your choice ");
+            System.out.println("\n1.Push\n2.Pop\n3.Show\n4.Exit");
+            System.out.println("Enter your choice ");
             choice = sc.nextInt();
             switch(choice)
             {
@@ -25,12 +25,17 @@ public class StackMain {
                 }
                 case 2:
                 {
-                    s.display();
+                    s.pop();
                     break;
                 }
                 case 3:
                 {
-                    System.out.println("Exiting....");
+                    s.display();
+                    break;
+                }
+                case 4:
+                {
+                    System.out.println("Exit the program");
                     System.exit(0);
                     break;
                 }
@@ -38,7 +43,7 @@ public class StackMain {
                 {
                     System.out.println("Please Enter valid choice ");
                 }
-            };
+            }
         }
     }
 }
